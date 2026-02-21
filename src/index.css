@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-/* ============================= */
-/* 🌍 Global Base Style */
-/* ============================= */
+/* Style Keseluruhan (Global) */
 
 @layer base {
   html {
@@ -30,9 +28,7 @@
   }
 }
 
-/* ============================= */
-/* 🎨 Design System */
-/* ============================= */
+/* Style System */
 
 :root {
   --color-primary: #6366f1;
@@ -52,17 +48,13 @@
   background-color: var(--color-primary-hover);
 }
 
-/* ============================= */
-/* 📦 Container System */
-/* ============================= */
+/* Untuk Container System */
 
 .container-custom {
   @apply max-w-6xl mx-auto px-6;
 }
 
-/* ============================= */
-/* ✨ Smooth Section Spacing */
-/* ============================= */
+/* Untuk Smooth Section Spacing */
 
 .section-padding {
   @apply py-20 md:py-28;

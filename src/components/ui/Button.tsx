@@ -10,9 +10,9 @@ interface BaseProps {
   className?: string;
 }
 
-/**
- * Button bisa jadi <button> atau <a>
- */
+{
+  /* Button bisa <button> atw <a>*/
+}
 
 type ButtonProps =
   | (BaseProps & ButtonHTMLAttributes<HTMLButtonElement> & { href?: undefined })
@@ -45,7 +45,9 @@ export default function Button(props: ButtonProps) {
 
   const classes = `${base} ${variants[variant]} ${sizes[size]} ${className}`;
 
-  // Kalau ada href → render <a>
+  {
+    /* href bisa jg render <a> */
+  }
   if ("href" in props && props.href) {
     return (
       <a {...props} className={classes}>

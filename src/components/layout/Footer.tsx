@@ -37,7 +37,7 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-[#0d0d0f] border-t border-white/[0.06] mt-20 overflow-hidden">
-      {/* Background blur */}
+      {/* Untuk Background blur */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-red-500/5 blur-[80px] rounded-full" />
       </div>

@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Panah bawah */}
+      {/* Untuk Panah bawah */}
       <div className="absolute bottom-6">
         <a
           href="#about"
