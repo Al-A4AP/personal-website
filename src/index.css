@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/* ============================= */
+/* 🌍 Global Base Style */
+/* ============================= */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased bg-white text-gray-900 dark:bg-black dark:text-white transition-colors duration-300;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  p {
+    @apply text-gray-600 dark:text-gray-400 leading-relaxed;
+  }
+}
+
+/* ============================= */
+/* 🎨 Design System */
+/* ============================= */
+
+:root {
+  --color-primary: #6366f1;
+  --color-primary-hover: #4f46e5;
+}
+
+/* Utility helper */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.hover\:bg-primary-hover:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* ============================= */
+/* 📦 Container System */
+/* ============================= */
+
+.container-custom {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+/* ============================= */
+/* ✨ Smooth Section Spacing */
+/* ============================= */
+
+.section-padding {
+  @apply py-20 md:py-28;
+}
