@@ -18,19 +18,20 @@ const Hero = () => {
         </div>
 
         <div className="space-y-6 text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-center">
             Hi, I'm{" "}
             <span className="text-red-400 font-bold drop-shadow-[0_0_8px_rgba(248,113,113,0.8)]">
               Áli
             </span>
           </h1>
 
-          <p className="text-gray-600 dark:text-gray-300 text-lg">
-            Banking & Finance Professional | SME Development Specialist | Full
-            Stack Web Developer
-          </p>
+          <ul className="text-gray-600 dark:text-gray-300 text-lg list-none text-center space-y-0">
+            <li>Banking & Finance Professional</li>
+            <li>SME Development Specialist</li>
+            <li>Full Stack Web Developer</li>
+          </ul>
 
-          <div className="flex justify-center md:justify-start gap-4 flex-wrap">
+          <div className="flex justify-center md:justify-center gap-4 flex-wrap">
             <Button
               href="#portfolio"
               variant="ghost"
@@ -40,7 +41,7 @@ const Hero = () => {
             </Button>
 
             <Button
-              variant="outline"
+              variant="maroon-glow"
               href="#contact"
               className=" hover:text-indigo-300 transition duration-300"
             >

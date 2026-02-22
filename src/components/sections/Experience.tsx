@@ -3,7 +3,7 @@ import { experiences } from "../../data/experience";
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 px-6 bg-gray-50 dark:bg-gray-900">
+    <section id="experience" className="py-20 px-6 bg-gray-50 dark:bg-black">
       <div className="max-w-4xl mx-auto">
         <SectionTitle title="Experience" subtitle="Professional Journey" />
 

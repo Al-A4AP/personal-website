@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-6 bg-gray-50 dark:bg-gray-900">
+    <section id="contact" className="py-20 px-6 bg-gray-50 dark:bg-black">
       <div className="max-w-3xl mx-auto">
         <SectionTitle title="Contact" subtitle="Let’s Work Together" />
 

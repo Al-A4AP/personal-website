@@ -34,7 +34,7 @@ export default function Footer() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <footer className="relative bg-[#0d0d0f] border-t border-white/[0.06] mt-20 overflow-hidden">
+    <footer className="relative dark:bg-black border-t border-white/[0.06] mt-20 overflow-hidden">
       {/* Untuk Background blur */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-red-500/5 blur-[80px] rounded-full" />
@@ -128,7 +128,7 @@ export default function Footer() {
             </span>
             k. All rights reserved.
           </span>
-          <span className="text-gray-700">
+          <span className="text-gray-600">
             Built with React & Tailwind CSS 😵‍💫😵‍💫🤯
           </span>
         </div>
