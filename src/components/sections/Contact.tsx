@@ -26,7 +26,10 @@ const Contact = () => {
             className="w-full p-4 rounded-xl border dark:bg-gray-800"
           />
 
-          <Button type="submit" className="w-full">
+          <Button
+            type="submit"
+            className="w-full hover:text-indigo-300 transition duration-300"
+          >
             Send Message
           </Button>
         </form>

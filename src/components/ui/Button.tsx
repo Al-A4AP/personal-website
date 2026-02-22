@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, AnchorHTMLAttributes, ReactNode } from "react";
 
-type Variant = "solid" | "outline" | "ghost";
+type Variant = "solid" | "outline" | "ghost" | "maroon-glow";
 type Size = "sm" | "md" | "lg";
 
 interface BaseProps {
@@ -28,13 +28,15 @@ export default function Button(props: ButtonProps) {
   } = props;
 
   const base =
-    "inline-flex items-center justify-center rounded-xl font-medium transition duration-300 focus:outline-none";
+    "inline-flex items-center justify-center rounded-xl font-medium transition-all duration-300 focus:outline-none active:scale-95";
 
   const variants: Record<Variant, string> = {
     solid: "bg-accent text-white hover:opacity-90",
     outline:
-      "border border-accent text-accent hover:bg-accent hover:text-white",
+      "border border-accent text-accent hover:bg-accent hover:texttext-indigo-300 transition duration-300 ",
     ghost: "text-accent hover:bg-accent/10",
+    "maroon-glow":
+      "bg-[#800000] text-white hover:bg-[a52a2a] hover:shadow-[0_0_20px_rgba(128,0,0,0.5)] shadow-sm",
   };
 
   const sizes: Record<Size, string> = {
@@ -43,21 +45,24 @@ export default function Button(props: ButtonProps) {
     lg: "px-8 py-4 text-lg",
   };
 
-  const classes = `${base} ${variants[variant]} ${sizes[size]} ${className}`;
+  const classes =
+    `${base} ${variants[variant]} ${sizes[size]} ${className}`.trim();
 
   {
     /* href bisa jg render <a> */
   }
   if ("href" in props && props.href) {
+    const { href, ...anchorProps } =
+      rest as AnchorHTMLAttributes<HTMLAnchorElement>;
     return (
-      <a {...props} className={classes}>
+      <a href={props.href} {...anchorProps} className={classes}>
         {children}
       </a>
     );
   }
-
+  const { ...buttonProps } = rest as ButtonHTMLAttributes<HTMLButtonElement>;
   return (
-    <button {...props} className={classes}>
+    <button {...buttonProps} className={classes}>
       {children}
     </button>
   );

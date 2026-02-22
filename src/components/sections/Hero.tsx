@@ -31,11 +31,19 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-center md:justify-start gap-4 flex-wrap">
-            <Button as="a" href="#portfolio">
+            <Button
+              href="#portfolio"
+              variant="ghost"
+              className=" hover:text-indigo-300 transition duration-300"
+            >
               View Projects
             </Button>
 
-            <Button variant="outline" as="a" href="#contact">
+            <Button
+              variant="outline"
+              href="#contact"
+              className=" hover:text-indigo-300 transition duration-300"
+            >
               Contact Me
             </Button>
           </div>
@@ -51,7 +59,7 @@ const Hero = () => {
           <img
             src={DownArrow}
             alt="Scroll down"
-            className="h-8 w-8 animate-bounce"
+            className="h-8 w-8 animate-bounce transition-all duration-300"
           />
         </a>
       </div>

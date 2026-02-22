@@ -44,7 +44,7 @@ const Portfolio = () => {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block px-4 py-2 text-sm font-medium rounded-md border border-gray-300 text-gray-700 hover:bg-gray-100 transition"
+                      className="inline-block px-4 py-2 text-sm font-medium rounded-md border border-gray-300 text-gray-700 hover:bg-indigo-300 transition"
                     >
                       {" "}
                       GitHub{" "}

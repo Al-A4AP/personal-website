@@ -45,12 +45,17 @@ export default function Footer() {
       <div className="relative max-w-6xl mx-auto px-6 pt-14 pb-8">
         {/* Ikon panah tengah - sebelum grid*/}
         <div className="flex justify-center mb-10">
-          <img
-            src={UpArrow}
-            alt="Arrow Up"
-            className="w-8 h-8 cursor-pointer animate-bounce"
-            onClick={scrollToTop}
-          />
+          <a
+            href="#Home"
+            className="text-gray-600 dark:text-gray-300 hover:text-red-400 transition"
+          >
+            <img
+              src={UpArrow}
+              alt="Arrow Up"
+              className="h-8 w-8 animate-bounce transition-all duration-300"
+              onClick={scrollToTop}
+            />
+          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-white/[0.06]">
@@ -75,12 +80,12 @@ export default function Footer() {
             <p className="text-xs uppercase tracking-widest text-gray-600 mb-4 font-medium">
               Navigate
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-2 ">
               {navLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-white transition-colors duration-200 relative group inline-flex items-center gap-2"
+                    className="text-sm text-gray-400 hover:text-indigo-300 transition-colors duration-200 relative group inline-flex items-center gap-2"
                   >
                     <span className="w-0 h-px bg-red-400 group-hover:w-4 transition-all duration-300 inline-block" />
                     {link.label}
@@ -104,7 +109,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   onMouseEnter={() => setHovered(s.label)}
                   onMouseLeave={() => setHovered(null)}
-                  className="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-all duration-200 group w-fit"
+                  className="flex items-center gap-3 text-sm text-gray-400 hover:text-indigo-300 transition-all duration-200 group w-fit"
                 >
                   <span
                     className={`p-2 rounded-lg border transition-all duration-200 ${
