@@ -68,7 +68,7 @@ export default function Footer() {
             </h3>
             <ul className="text-sm text-gray-500 leading-relaxed space-y-1 max-w-[220px]">
               <li>Banking & Finance Professional</li>
-              <li>SME Development Specialist</li>
+              <li>MSMEs Development Specialist</li>
               <li>Full Stack Web Developer</li>
             </ul>
           </div>

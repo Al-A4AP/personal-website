@@ -11,7 +11,7 @@ const Experience = () => {
           {experiences.map((exp) => (
             <div
               key={exp.id}
-              className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm"
+              className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:text-indigo-300 transition-colors duration-300"
             >
               <h3 className="font-semibold text-lg">{exp.role}</h3>
 
@@ -19,7 +19,7 @@ const Experience = () => {
                 {exp.company} • {exp.period}
               </p>
 
-              <ul className="list-disc ml-5 mt-4 space-y-2 text-gray-600 dark:text-gray-300">
+              <ul className="ml-5 mt-4 space-y-2 text-gray-600 dark:text-gray-300 list-none text-justify">
                 {exp.description.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}

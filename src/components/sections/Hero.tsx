@@ -27,7 +27,7 @@ const Hero = () => {
 
           <ul className="text-gray-600 dark:text-gray-300 text-lg list-none text-center space-y-0">
             <li>Banking & Finance Professional</li>
-            <li>SME Development Specialist</li>
+            <li>MSMEs Development Specialist</li>
             <li>Full Stack Web Developer</li>
           </ul>
 
