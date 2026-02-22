@@ -31,8 +31,6 @@ const socialLinks: SocialLink[] = [
 ];
 
 export default function Footer() {
-  const [hovered, setHovered] = useState<string | null>(null);
-
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
@@ -107,19 +105,13 @@ export default function Footer() {
                   href={s.href}
                   target={s.href.startsWith("http") ? "_blank" : undefined}
                   rel="noopener noreferrer"
-                  onMouseEnter={() => setHovered(s.label)}
-                  onMouseLeave={() => setHovered(null)}
-                  className="flex items-center gap-3 text-sm text-gray-400 hover:text-indigo-300 transition-all duration-200 group w-fit"
+                  className="flex items-center gap-3 text-sm font-medium rounded-md border border-white/[0.06] text-gray-400 px-4 py-2 hover:bg-indigo-300 hover:text-gray-900 transition duration-300 w-40 group"
                 >
-                  <span
-                    className={`p-2 rounded-lg border transition-all duration-200 ${
-                      hovered === s.label
-                        ? "bg-red-400/10 border-red-400/30 text-red-300"
-                        : "bg-white/[0.03] border-white/[0.06] text-gray-500"
-                    }`}
-                  >
-                    <img src={s.img} alt={s.label} className="w-5 h-5" />
-                  </span>
+                  <img
+                    src={s.img}
+                    alt={s.label}
+                    className="w-5 h-5 transition-all duration-300 group-hover:brightness-0"
+                  />
                   {s.label}
                 </a>
               ))}
