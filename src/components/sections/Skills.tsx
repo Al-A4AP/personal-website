@@ -14,12 +14,21 @@ const Skills = () => {
               className="group bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition duration-300"
             >
               <div className="flex justify-between items-center mb-1">
-                <h3 className="font-semibold text-lg group-hover:text-indigo-300 transition-colors duration-300">
-                  {skill.name}
-                </h3>
+                <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-50 dark:bg-gray-700 group-hover:bg-indigo-300/10 transition-colors duration-300">
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="w-6 h-6 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg group-hover:text-indigo-300 transition-colors duration-300">
+                    {skill.name}
+                  </h3>
+                </div>
                 <span className="text-sm font-medium text-gray-500">
                   {skill.level}%
-                </span>{" "}
+                </span>
               </div>
 
               <div className="mt-4">
